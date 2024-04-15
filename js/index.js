@@ -62,3 +62,17 @@ const getWeatherDetails=(cityName,lat,lon)=>{
         })
     
 }
+const getcitycoordinates=()=>{
+    const cityName=cityInput.value.trim();
+    if(!cityName)return;
+    const GEOCODING_API_URL=`http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=${API_KEY}`;
+
+    
+    fetch(GEOCODING_API_URL).then(res=>res.json()).then(data=>{
+        if(!data.length)return alert(`No coordinates found for${cityName}`);
+        const {name,lat,lon}=data[0]
+        getWeatherDetails(name,lat,lon);
+    }).catch(()=>{
+        alert("An error occured while fetching the coordinates")
+    })
+}
