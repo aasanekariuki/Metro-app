@@ -18,6 +18,14 @@ Current Weather: Get a detailed overview of the current temperature, wind speed,
 
 Location-Based Weather: For those on the move, our app also offers the option to use your current location, ensuring you're always aware of the weather no matter where you are.
 
+## Installation : 
+
+Use the git clone command to download from the Github repository into your local environment. 
+
+## Installation Requirements : 
+
+You are required to have Git. 
+
 
 
 
