@@ -1,42 +1,41 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #f7f7f7;
   color: #333;
- 
+  background-image:url("https://i.pinimg.com/236x/24/06/05/2406054d8cbcc5a73687a0668e70f971.jpg")
 }
 
 .container {
   max-width: 800px;
-  margin: 20px auto;
+  margin: 50px auto;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 50px;
 }
 
 h1 {
   text-align: center;
-  margin-bottom: 20px;
-  color: #008080;
+  margin-bottom: 30px;
+  color: #8b0000; 
 }
+
+
+.navbar {
+  background-color: #8b4513 !important; 
+}
+
 
 .Weather-input {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .city-input {
   width: 60%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #8b0000; 
   border-radius: 5px;
   font-size: 16px;
   margin-bottom: 10px;
@@ -45,7 +44,7 @@ h1 {
 .search-btn,
 .location-btn {
   padding: 10px 20px;
-  background-color: #008080;
+  background-color: #8b0000; 
   border: none;
   border-radius: 5px;
   color: #fff;
@@ -56,26 +55,25 @@ h1 {
 
 .search-btn:hover,
 .location-btn:hover {
-  background-color: #005353;
+  background-color: #b22222; 
 }
 
-.Current-weather .details{
+
+.Current-weather {
   text-align: center;
   margin-bottom: 30px;
-  background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.details h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+.details {
+  background-color: #ffe4b5; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.days-forecast .weather-cards{
+
+.days-forecast {
   text-align: center;
-  flex-wrap: wrap;
 }
 
 .weather-cards {
@@ -86,30 +84,24 @@ h1 {
 
 .card {
   width: 150px;
-  padding: 10px;
-  background-color: #f0f0f0;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #ffe4b5; 
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s;
-  flex: 1 1 150px;
-  margin: 10px;
 }
 
 .card:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .card h2 {
   font-size: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  color: #8b0000; 
 }
 
 .card h4 {
   font-size: 14px;
-  margin-bottom: 3px;
-}
-@media (max-width: 768px) {
-  .Weather-input .city-input {
-      width: 100%;
-  }
+  margin-bottom: 5px;
 }
