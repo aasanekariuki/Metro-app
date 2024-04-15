@@ -26,6 +26,15 @@ Use the git clone command to download from the Github repository into your local
 
 You are required to have Git. 
 
+### Installation requirements :
+
+https://github.com/aasanekariuki/Metro-app.git
+
+git@github.com:aasanekariuki/Metro-app.git
+
+# Live link :
+
+[Git](gh-pages link)
 
 
 
