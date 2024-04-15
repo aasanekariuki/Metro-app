@@ -104,3 +104,4 @@ searchButton.addEventListener("click",getcitycoordinates);
 locationButton.addEventListener("click",getusercoordinates);
 cityInput.addEventListener("keyup", e=> e.key === "Enter" && getcitycoordinates())
 
+//
