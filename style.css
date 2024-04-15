@@ -1,4 +1,4 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -91,6 +91,8 @@ h1 {
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s;
+  flex: 1 1 150px;
+  margin: 10px;
 }
 
 .card:hover {
@@ -105,4 +107,9 @@ h1 {
 .card h4 {
   font-size: 14px;
   margin-bottom: 3px;
-} */
+}
+@media (max-width: 768px) {
+  .Weather-input .city-input {
+      width: 100%;
+  }
+}
