@@ -36,6 +36,15 @@ git@github.com:aasanekariuki/Metro-app.git
 
 [Git](gh-pages link)
 
+## Technologies used : 
+
+HTML
+CSS
+BootStrap
+JavaScript 
+
+
+
 
 
 
