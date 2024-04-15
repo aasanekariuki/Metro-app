@@ -28,3 +28,37 @@ const createweathercard= (cityName,weatherItem, index)=>{
              </li>`;
     }
 } 
+const getWeatherDetails=(cityName,lat,lon)=>{
+    const WEATHER_API_URL=`http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${API_KEY}`
+
+    fetch(WEATHER_API_URL).then(res=>res.json()).then(data=>{
+        
+    
+        const uniqueForcastDays=[];
+        const fiveDaysForecast= data.list.filter(forecast=> {
+        const forecastDate=new Date(forecast.dt_txt).getDate();
+        if(!uniqueForcastDays.includes(forecastDate)){
+            return uniqueForcastDays.push(forecastDate);
+        }
+        });
+
+        
+        cityInput.value="";
+        weathercardsDiv.innerHTML="";
+        currentweatherDiv.innerHTML="";
+
+        
+        fiveDaysForecast.forEach((weatheritem,index )=> {
+
+        if(index===0){
+            weathercardsDiv.insertAdjacentHTML("beforeend",createweathercard(cityName,weatheritem,index));
+        }else{
+            weathercardsDiv.insertAdjacentHTML("beforeend",createweathercard(cityName,weatheritem,index));
+        }
+            
+             });
+    })  .catch(()=>{
+            alert("An error occured while fetching the weather forecast!")
+        })
+    
+}
