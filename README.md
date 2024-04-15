@@ -43,9 +43,13 @@ https://aasanekariuki.github.io/Metro-app/
 ## Technologies used : 
 
 HTML
+
 CSS
+
 BootStrap
+
 JavaScript 
+
 
 ### License
 The content of this site is licensed under the MIT license
